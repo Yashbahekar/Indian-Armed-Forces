@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INDIAN AIR FORCE</title>
+
+    <link rel="stylesheet" href="/styles/forces.css" />
+    <link rel="stylesheet" href="/styles/shared.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div id="home-logo">
+        <a href="index">Indian Armed Forces</a>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li><a href="index">Home</a></li>
+          <li><a href="index/#highlights">Services</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Indian Air-Force</h2>
+
+      <div class="btn-lists">
+        <ul>
+          <li>
+            <form action="/air/ranks" method="get">
+              <button class="btn">Ranks</button>
+            </form>
+          </li>
+          <li>
+            <form action="/air/posts" method="get">
+              <button class="btn">Posts</button>
+            </form>
+          </li>
+
+          <li>
+            <form action="/air/officers" method="get">
+              <button class="btn">Officers</button>
+            </form>
+          </li>
+
+          <li>
+            <form action="/air/all" method="get">
+              <button class="btn">ALL</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <table class="table">
+          <thead>
+            <th>Post ID</th>
+            <th>Post Name</th>
+            <th>Officer Name</th>
+            <th>Rank Name</th>
+            <th>Rank Salary</th>
+            <!-- <th>Salary</th> -->
+          </thead>
+          <tbody>
+            <% for(const dat of data) { %>
+            <tr>
+              <td data-label="Sr.No"><%= dat.Air_Post_ID %></td>
+              <td data-label="Name"><%= dat.Air_Post_Name %></td>
+              <td data-label="Rank"><%= dat.Air_Officer_Name %></td>
+              <td data-label="Officer"><%= dat.Air_Rank_Name %></td>
+              <td data-label="Officer"><%= dat.Air_Salary %></td>
+            </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="https://twitter.com/YashBahekar"
+            ><img src="/images/icons/twitter.png" alt="Twitter Logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://in.linkedin.com/in/yash-bahekar-025151220"
+            ><img src="/images/icons/linkedin.png" alt="linkedin Logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/yash__bahekar/"
+            ><img src="/images/icons/insta.png" alt="Instagram Logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com"
+            ><img src="/images/icons/facebook.png" alt="Facebook Logo"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

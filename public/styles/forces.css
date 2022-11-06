@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  /* padding: 20px; */
+  font-family: sans-serif;
+  background-color: rgb(200 166 84);
+}
+
+/* main{
+    position: relative;
+    top:120px;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(18, 58, 109);
+}
+
+.btn-lists {
+  position: static;
+  top: 75px;
+  z-index: 1;
+}
+
+.btn-lists ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* CSS */
+.btn {
+  background-color: #164791;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(1, 60, 136, 0.5) 0 -1px 3px 0 inset,
+    rgba(0, 44, 97, 0.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inherit;
+  font-family: "Space Grotesk", -apple-system, system-ui, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 16px 20px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.btn:hover {
+  background-color: #065dd8;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .bt {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+}
+
+.btn-lists ul li {
+  margin-right: 2.2rem;
+  list-style: none;
+}
+
+.table {
+  margin: auto;
+
+  /* position: relative; */
+  /* margin: 120px; */
+  padding: 90px;
+  border: 2px solid rgba(0, 44, 97, 0.1);
+  width: 80%;
+  border-collapse: separate;
+}
+
+.table td,
+.table th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 2px solid #010101;
+  color: rgb(0, 0, 0);
+}
+
+.table th {
+  background: linear-gradient(45deg, rgb(7 31 98 / 93%), rgb(12 27 74 / 91%));
+  color: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: rgb(176 170 136);
+}
+.table tbody tr:nth-child(odd) {
+  background-color: rgb(216 197 120);
+}

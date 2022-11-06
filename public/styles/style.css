@@ -1,0 +1,97 @@
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  background-color: rgb(200 166 84);
+  
+}
+
+main {
+  align-items: center;
+}
+
+#main-logo {
+  position: static;
+  top: 0px;
+  bottom: 20px;
+  width: 600px;
+  height: 800px;
+  object-fit: contain;
+}
+
+#highlights {
+  /* background-color: rgb(227,255,253); */
+  /* background: linear-gradient(
+    45deg,
+    rgba(180, 145, 30, 0.578),
+    rgba(194, 123, 0, 0.733)
+  );
+  background: linear-gradient(
+    45deg,
+    hsla(31, 42%, 52%, 0.753),
+    rgba(137, 111, 80, 0.721)
+  ); */
+  background: linear-gradient(
+    45deg,
+    hsla(31, 80%, 34%, 0.753),
+    rgba(137, 111, 80, 0.721)
+  );
+
+  padding: 24px; /*here occurs the marging collapsing as the margin of highlights header and ul margin make some extra white space u can see by commenting the padding property u will see some space white and some fillef by backgrnd clr applied  */
+}
+
+#highlights h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(0, 17, 60);
+  text-shadow: 1px 1px rgb(1, 10, 17);
+
+  margin: 24px 0 55px 0;
+}
+#destinations {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.destination {
+  margin: 0 30px;
+  list-style: none;
+}
+.destination img {
+  height: 200px;
+  width: 100%;
+  
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 10px;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+.destination img:hover {
+    box-shadow: 4px 6px 10px rgb(79, 58, 35);
+  transform: scale(1.1);
+}
+
+.destination p {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(61, 98, 114);
+  font-size: 24px;
+  text-shadow: 1px 1px rgb(1, 10, 17);
+
+  margin: 20px 0;
+}
+
+.destination strong {
+  color: rgb(22, 69, 77);
+}
+
+.force-link {
+  position: relative;
+  margin: 4rem 1rem;
+}
+
+
